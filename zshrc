@@ -97,4 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gs='git status'
+alias gaa='git add *'
+alias gcm='git commit -m'
 export DOCKER_HOST=tcp://0.0.0.0:2375
