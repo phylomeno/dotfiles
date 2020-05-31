@@ -100,4 +100,5 @@ source $ZSH/oh-my-zsh.sh
 alias gs='git status'
 alias gaa='git add *'
 alias gcm='git commit -m'
+alias gp='git push'
 export DOCKER_HOST=tcp://0.0.0.0:2375
