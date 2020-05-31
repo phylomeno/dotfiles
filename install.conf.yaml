@@ -5,3 +5,4 @@
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
