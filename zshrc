@@ -113,3 +113,6 @@ alias gaa='git add *'
 alias gcm='git commit -m'
 alias gp='git push'
 export DOCKER_HOST=tcp://0.0.0.0:2375
+
+autoload -U +X bashcompinit && bashcompinit
+source /etc/bash_completion.d/azure-cli
