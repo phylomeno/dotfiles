@@ -92,17 +92,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-gitall() {
-    git add .
-    if [ "$1" != "" ] # or better, if [ -n "$1" ]
-    then
-        git commit -m "$1"
-    else
-        git commit -m update
-    fi
-    git push
-}
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -111,10 +100,6 @@ gitall() {
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gs='git status'
-alias gaa='git add *'
-alias gcm='git commit -m'
-alias gp='git push'
 export DOCKER_HOST=tcp://0.0.0.0:2375
 
 autoload -U +X bashcompinit && bashcompinit
