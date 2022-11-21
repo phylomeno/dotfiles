@@ -103,3 +103,5 @@ source $ZSH/oh-my-zsh.sh
 export DOCKER_HOST=tcp://0.0.0.0:2375
 
 autoload -U +X bashcompinit && bashcompinit
+
+path+=/home/scro/.dotnet/tools
