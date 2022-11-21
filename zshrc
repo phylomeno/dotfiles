@@ -105,3 +105,12 @@ export DOCKER_HOST=tcp://0.0.0.0:2375
 autoload -U +X bashcompinit && bashcompinit
 
 path+=/home/scro/.dotnet/tools
+
+# Nuke Auto-completion
+_nuke_zsh_complete()
+{
+    local completions=("$(nuke :complete "$words")")
+    reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _nuke_zsh_complete nuke
