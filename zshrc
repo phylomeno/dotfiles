@@ -114,3 +114,5 @@ _nuke_zsh_complete()
 }
 
 compctl -K _nuke_zsh_complete nuke
+
+bindkey -v
