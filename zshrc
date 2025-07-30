@@ -100,7 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export DOCKER_HOST=tcp://0.0.0.0:2375
 
 autoload -U +X bashcompinit && bashcompinit
 
@@ -116,3 +115,10 @@ _nuke_zsh_complete()
 compctl -K _nuke_zsh_complete nuke
 
 bindkey -v
+
+
+# Enable bash completion
+autoload -U +X bashcompinit && bashcompinit
+
+# Load azure cli completions (bash based)
+source /etc/bash_completion.d/azure-cli
